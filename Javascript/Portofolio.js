@@ -62,7 +62,7 @@ function sliderBox() {
   next.addEventListener("click", slideNext);
   setInterval(function () {
     slideNext();
-  }, 7500);
+  }, 10000);
 }
 function downloadCvOnClick() {
   if (
