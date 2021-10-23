@@ -49,7 +49,7 @@ function sliderBox() {
     }
     items[count].classList.add("active-picture");
   }
-  latest.addEventListener("click", slideNext);
+  latest.addEventListener("click", slideLatest);
   function slideNext() {
     items[count].classList.remove("active-picture");
     if (count < numberSlide - 1) {
@@ -68,7 +68,7 @@ function downloadCvOnClick() {
   if (
     window.confirm("Voulez vous enrengistré mon cv pour pouvoir le consulté ?")
   ) {
-    location.href = "./File/Cv+Ilyas+Boukhechem.docx";
+    document.querySelector(".myCV").href = "./File/Cv Ilyas Boukhechem.pdf";
   } else {
     return false;
   }

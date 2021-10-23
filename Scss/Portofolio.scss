@@ -145,7 +145,7 @@ header {
 main {
   margin-left: 250px;
   width: 100%;
-  background: url("../Images/Space.jpg");
+  background: url("../Images/Space.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -196,7 +196,7 @@ main {
           border-radius: 0.5em;
 
           .background-GameOfThrone {
-            background-image: url("../Images/GameOfThrone.jpg");
+            background-image: url("../Images/GameOfThrone.webp");
           }
           .background-Pokemon {
             background-image: url("../Images/Pokemon.jpg");
@@ -205,7 +205,7 @@ main {
             background-image: url("../Images/soloLeveling.gif");
           }
           .background-DragonBall {
-            background-image: url("../Images/DragonBallZ.jpg");
+            background-image: url("../Images/DragonBallZ.webp");
           }
         }
         .active-picture {
@@ -281,24 +281,21 @@ main {
       height: 300px;
       box-shadow: 0px 0px 5px 0.5px rgb(43, 42, 42);
       .background-Groupomania {
-        background-image: url("../Images/Groupomania.png");
+        background-image: url("../Images/Groupomania.webp");
       }
       .background-Orinoco {
-        background-image: url("../Images/Orinoco.png");
+        background-image: url("../Images/Orinoco.webp");
         background-position: left;
       }
       .background-Reservia {
-        background-image: url("../Images/Reservia.png");
+        background-image: url("../Images/Reservia.webp");
         background-position: left;
       }
       .background-OhMyFood {
-        background-image: url("../Images/OhMyFood.png");
-      }
-      .background-Groupomania {
-        background-image: url("../Images/Groupomania.png");
+        background-image: url("../Images/OhMyFood.webp");
       }
       .background-SoPeckoko {
-        background-image: url("../Images/SoPeckoko.png");
+        background-image: url("../Images/SoPeckoko.webp");
       }
     }
   }
