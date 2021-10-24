@@ -1,13 +1,17 @@
 togglerClick();
 function togglerClick() {
-  let toggleButton = document.querySelector("#button-toggle");
+  let toggleButton = document.getElementById("button-toggle");
   toggleButton.addEventListener("click", function (event) {
     event.preventDefault;
     {
       if (document.getElementById("header").style.marginLeft == "0px") {
         document.getElementById("header").style.marginLeft = "-350px";
+        document.getElementById("divToggler").style.boxShadow =
+          "0 0 0px 0px white";
       } else {
-        document.getElementById("header").style.marginLeft = "0px";
+        (document.getElementById("header").style.marginLeft = "0px"),
+          (document.getElementById("divToggler").style.boxShadow =
+            "0 0 10px 0.1px white");
       }
     }
   });
