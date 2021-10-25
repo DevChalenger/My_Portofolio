@@ -67,12 +67,24 @@ function sliderBox() {
     slideNext();
   }, 10000);
 }
-function downloadCvOnClick() {
-  if (
-    window.confirm("Voulez vous enrengistré mon cv pour pouvoir le consulté ?")
-  ) {
-    document.querySelector(".myCV").href = "./File/Cv Ilyas Boukhechem.pdf";
-  } else {
-    return false;
-  }
+function alertBox() {
+  swal({
+    title: "CV",
+    text: "Voulez-vous téléchargez mon Cv",
+    icon: "info",
+    buttons: true,
+  }).then((donwloaded) => {
+    if (donwloaded) {
+      swal({
+        title: "Cv télécharger",
+        text: "Bonne consultation",
+        icon: "success",
+      }),
+        setTimeout(function donwloadfile() {
+          window.open("./File/Cv Ilyas Boukhechem.pdf", "_blank");
+        }, 1500);
+    } else {
+      swal("Le Cv a pas été télécharger.");
+    }
+  });
 }
