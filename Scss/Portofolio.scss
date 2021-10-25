@@ -46,32 +46,32 @@ li {
     opacity: 100%;
   }
 }
+.fa-circle-notch {
+  font-size: 2em;
+}
 #loader {
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: 10;
+
   display: flex;
-  background-color: rgba($color: #ffffff, $alpha: 0.75);
+  background-color: rgba($color: #ffffff, $alpha: 0.9);
   p {
     position: absolute;
     bottom: 25%;
   }
-  .loadSpin {
-    width: 150px;
-    height: 150px;
-    background: #000000;
-    background: -webkit-linear-gradient(to bottom, white, #000000);
-    background: linear-gradient(to bottom, white, #000000);
-    border-radius: 100%;
-    animation-name: RotateLoader;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    .loadSpinCenter {
-      width: 120px;
+  .loaderBlock {
+    font-size: 5em;
+    color: black;
+    .loadSpin {
       border-radius: 100%;
-      height: 120px;
-      background-color: rgb(255, 255, 255);
+      background: linear-gradient(to right, #000000 0%, #a1a1a1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation-name: RotateLoader;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
     }
   }
 }
@@ -315,17 +315,12 @@ main {
           transition: 1s ease-in-out;
           border-radius: 0.5em;
           width: 400px;
-
           &:hover {
             color: white;
             background-color: rgba(43, 42, 42, 0.75);
           }
         }
         &:hover {
-          -ms-transform: scale(1.1);
-          -moz-transform: scale(1.1);
-          -webkit-transform: scale(1.1);
-          -o-transform: scale(1.1);
           transform: scale(1.1);
         }
       }
