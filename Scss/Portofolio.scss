@@ -149,7 +149,7 @@ li {
 main {
   margin-left: 250px;
   width: 100%;
-
+  overflow-y: hidden;
   .backgroundimage {
     background: url("../Images/Space.webp");
     position: fixed;
