@@ -49,21 +49,18 @@ li {
 .fa-circle-notch {
   font-size: 2em;
 }
+
 #loader {
-  width: 100%;
   height: 100%;
   position: fixed;
   z-index: 10;
-
+  font-size: 1.5em;
   display: flex;
+  flex-direction: column;
   background-color: rgba($color: #ffffff, $alpha: 0.9);
-  p {
-    position: absolute;
-    bottom: 25%;
-  }
+
   .loaderBlock {
-    font-size: 5em;
-    color: black;
+    font-size: 3em;
     .loadSpin {
       border-radius: 100%;
       background: linear-gradient(to right, #000000 0%, #a1a1a1 100%);
