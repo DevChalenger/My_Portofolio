@@ -89,8 +89,3 @@ function alertBox() {
   });
 }
 test();
-function test() {
-  var iNum = 12;
-  iNum %= 2;
-  console.log(iNum);
-}
