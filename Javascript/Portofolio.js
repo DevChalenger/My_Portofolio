@@ -81,7 +81,10 @@ function alertBox() {
         icon: "success",
       }),
         setTimeout(function donwloadfile() {
-          window.open("./File/Cv_Ilyas_Boukhechem.pdf", "_blank");
+          window.open(
+            "./File/Cv_DéveloppeurFrontendReact_IlyasBoukhechem.pdf",
+            "_blank"
+          );
         }, 1500);
     } else {
       swal("Le Cv a pas été télécharger.");
